@@ -281,7 +281,7 @@ function Navbar({ onMenu, sidebarHidden = false }) {
           </button>
 
           {showNotifications && (
-            <div className="admin-notification-menu absolute right-0 z-50 mt-3 w-[min(24rem,calc(100vw-2rem))] overflow-hidden rounded-2xl border bg-white shadow-xl">
+            <div className="admin-notification-menu fixed inset-x-4 top-[88px] z-50 w-auto overflow-hidden rounded-2xl border bg-white shadow-xl sm:absolute sm:inset-x-auto sm:top-auto sm:right-0 sm:mt-3 sm:w-[min(24rem,calc(100vw-2rem))]">
               <div className="flex items-center justify-between border-b px-4 py-3">
                 <div>
                   <strong>Account activity</strong>
@@ -293,7 +293,7 @@ function Navbar({ onMenu, sidebarHidden = false }) {
                 </div>
               </div>
 
-              <div className="max-h-[28rem] overflow-y-auto">
+              <div className="max-h-[min(28rem,60vh)] overflow-y-auto">
                 {notificationsLoading && (
                   <p className="px-4 py-8 text-center text-sm text-slate-500">Loading notifications...</p>
                 )}

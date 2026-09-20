@@ -73,10 +73,10 @@ function Login() {
 
   return (
 
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 px-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 px-4 py-8 sm:px-6">
 
 
-      <div className="w-full max-w-6xl h-[92vh] bg-white rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2">
+      <div className="w-full max-w-6xl lg:h-[92vh] bg-white rounded-2xl shadow-2xl overflow-hidden grid lg:grid-cols-2">
 
 
 
@@ -168,7 +168,7 @@ function Login() {
         {/* RIGHT PANEL */}
 
 
-        <div className="flex items-center justify-center px-10 py-8">
+        <div className="flex items-center justify-center px-6 py-8 sm:px-10">
 
 
           <div className="w-full max-w-md">
